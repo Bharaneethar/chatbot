@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 # Load environment variables
 load_dotenv()
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder='.')
 
 # Configure Gemini API
 # 1. Try to load from environment variable (preferred)
