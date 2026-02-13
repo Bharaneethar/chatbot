@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: antigravity-chatbot
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app
+    envVars:
+      - key: GEMINI_API_KEY
+        sync: false # You will need to set this in the Render dashboard
