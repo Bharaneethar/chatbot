@@ -6,4 +6,4 @@ services:
     startCommand: gunicorn app:app
     envVars:
       - key: GEMINI_API_KEY
-        sync: false # You will need to set this in the Render dashboard
+        value: "AIzaSyBx8QDagWpsx3-FIOW1w5shNvxiLcV3z6I"
