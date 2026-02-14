@@ -1,9 +1,0 @@
-services:
-  - type: web
-    name: antigravity-chatbot
-    env: python
-    buildCommand: pip install -r requirements.txt
-    startCommand: gunicorn app:app
-    envVars:
-      - key: GEMINI_API_KEY
-        value: "AIzaSyBx8QDagWpsx3-FIOW1w5shNvxiLcV3z6I"
